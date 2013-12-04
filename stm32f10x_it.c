@@ -178,6 +178,7 @@ void TIM5_IRQHandler(void)
   
   TIM_ClearITPendingBit(TIM5, TIM_IT_Update);	//__Clear TIM5 update interrupt__
 }
+
 int cnt;
 //Обработчик прерываний от DMA1_Channel1 
 //==============================================================================
@@ -188,6 +189,7 @@ void DMA1_Channel1_IRQHandler( void )
   
   must_write = 1;
   cnt++;
+  
   //сбрасываем флаг прерывания global interrupt 1 канала DMA 1
   DMA1->IFCR |= 1; //DMA1_IT_GL1;  
 }

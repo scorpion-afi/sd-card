@@ -2,7 +2,7 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>631177890</fileChecksum>
+  <fileChecksum>3275167739</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
@@ -103,6 +103,10 @@
           <name>ICCARM</name>
           <file> 21 27 51 60 61 74 72 55 71 31 70 24 49 58 26 59 8 54 69 47 29 25 57</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 27 51 60 61 74 72 71 31 70 24 49 58 26 59 8 54 69 47 29 25 57</file>
+        </tool>
       </inputs>
     </file>
     <file>
@@ -199,10 +203,6 @@
         <tool>
           <name>ICCARM</name>
           <file> 25 27 51 60 61 74 72 55 71 31 70 24 49 58 26 59 8 54 69 47 29 57 21</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 25 27 51 60 61 74 72 71 31 70 24 49 58 26 59 8 54 69 47 29 57 21</file>
         </tool>
       </inputs>
     </file>

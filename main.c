@@ -3,20 +3,20 @@
 #include "ff.h"
 
 #define ADC1_DR_Address ( (uint32_t) 0x4001244C )
-#define ADC_NUM         4096                  // unsigned short
-#define ADC_NUM_DIV_2   (ADC_NUM/2)
+#define ADC_NUM         ( 4096 )                  // unsigned short
+#define ADC_NUM_DIV_2   ( ADC_NUM/2 )
 
-#define FILE_NAME "0:brec.m"
+#define FILE_NAME "0:e.m"
 
 // cycle-buffer  -- 8kB
-unsigned short gl_adc_buff[ADC_NUM];
+unsigned short  gl_adc_buff[ADC_NUM];
 unsigned short* p_beg_adc_buff;
 
 FATFS fs;       // main FAT_FS struct
 FIL file;       // file object
 unsigned int must_write;
 unsigned int res;
-int first_half;  
+unsigned int first_half;  
 
 void init( void );
 void start( void );
@@ -25,29 +25,27 @@ void         init_TIM5( void );
 unsigned int init_sd( void );
 unsigned int write( const void* data, unsigned int num );
 unsigned int read( void* buf, unsigned int num );
-
+  
 //точка входа
 //=======================================================================================
-int main()
-{
-  unsigned int res;
-  int first_half; 
-  
+int main( void )
+{ 
   first_half = 1;
   
   init_TIM5();
   res = init_sd();
   
-  if( !res )
+  if( res )
   { 
-    start();
+    return 0; 
   }
+  
+  start();
   
   while( 1 )
   {
     if( must_write )
-    {
-      
+    {     
       if( first_half )
       {
         first_half = 0;
@@ -87,7 +85,7 @@ unsigned int init_sd( void )
   // opens/creates file with name FILE_NAME
   // FA_OPEN_ALWAYS - Opens the file if it is existing. If not, a new file is created.
   // FA_WRITE | FA_READ - Data can be read/written from/to the file.
-  res = f_open( &file, FILE_NAME, FA_WRITE | FA_READ | FA_OPEN_ALWAYS ); 
+  res = f_open( &file, FILE_NAME, FA_WRITE /*| FA_READ */| FA_OPEN_ALWAYS ); 
   if( res )
   {
     return 3;    
@@ -318,8 +316,8 @@ void init( void )
   RCC->APB1ENR |=  0x02;
   
   TIM_TimeBaseInitStruct.TIM_CounterMode = TIM_CounterMode_Up;            
-  TIM_TimeBaseInitStruct.TIM_Period = 720-1;   // прерывания 100 000 раз в секунду(720)
-  TIM_TimeBaseInitStruct.TIM_Prescaler = 99; // 100 - 1
+  TIM_TimeBaseInitStruct.TIM_Period = 720-1;   // прерывания 50 000 раз в секунду(720)
+  TIM_TimeBaseInitStruct.TIM_Prescaler = 1; // 2 - 1
   TIM_TimeBaseInit( TIM3, &TIM_TimeBaseInitStruct );
   
   //выбираем в качестве источника внешнего тригера(TRGO) update event
