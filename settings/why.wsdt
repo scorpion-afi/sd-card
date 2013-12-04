@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>why/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>280</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>31</ColumnWidth0><ColumnWidth1>1347</ColumnWidth1><ColumnWidth2>359</ColumnWidth2><ColumnWidth3>89</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>645</ColumnWidth0><ColumnWidth1>92</ColumnWidth1><ColumnWidth2>1106</ColumnWidth2></Find-in-Files>
+    <Debug-Log><ColumnWidth0>33</ColumnWidth0><ColumnWidth1>1794</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24094-25239</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>why</ExpandedNode><ExpandedNode>why/FatFS</ExpandedNode><ExpandedNode>why/periph</ExpandedNode><ExpandedNode>why/system_stm32f10x.c</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-6445-26389</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-10255-16679</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-12084-19667</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>211</SelStart><SelEnd>211</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stm32f10x_it.c</Filename><XPos>0</XPos><YPos>170</YPos><SelStart>4785</SelStart><SelEnd>4785</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Libraries\FatFS\sd_spi_stm32.c</Filename><XPos>0</XPos><YPos>60</YPos><SelStart>3752</SelStart><SelEnd>3752</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-013d6848><key>iaridepm.enu1</key></Toolbar-013d6848></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>792</Bottom><Right>371</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>107181</sizeHorzCX><sizeHorzCY>193424</sizeHorzCY><sizeVertCX>199893</sizeVertCX><sizeVertCY>767892</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1868</Right><x>-2</x><y>-2</y><xscreen>1870</xscreen><yscreen>200</yscreen><sizeHorzCX>1002144</sizeHorzCX><sizeHorzCY>193424</sizeHorzCY><sizeVertCX>107181</sizeVertCX><sizeVertCY>193424</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
